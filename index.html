@@ -13,7 +13,7 @@
             list-style-type: none;
             margin: 0;
             padding:0;
-            width: 5%;
+            width: 4.7%;
             background-color: darkslategrey;
             height: 100%; /* Full height */
             position: fixed; /* Make it stick, even on scroll */
@@ -24,9 +24,9 @@
           display: block;
           color: white;
           padding: 16px;
-          padding-left:20px;
+          padding-left:30px;
           text-decoration: none;
-          width:100%;
+          
          
         }
         
@@ -67,6 +67,7 @@
             overflow: scroll;
             background-color: #F5F5F5;
             border-left:2px solid lightgray;
+            height:500px;
         }
         .fields{
             padding:10px;
@@ -85,6 +86,20 @@
         .head{
             background-color: #F5F5F5 ;
         }
+        button{
+            border-radius: 5px;
+        }
+        .profile{
+            background-color: lightsalmon;
+            height:40px;
+            width:40px;
+            border:none;
+        }
+        select.new,select.group{
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+
         
         </style>
 </head>
@@ -114,7 +129,9 @@
                             <table class="float-end">
                                 <tr>
                                     <td><button class="start">Get Started</button></td>
-                                    <td><select class="new"><option><i class="fa fa-plus-circle"></i>&nbsp; New</option></select></td>
+                                    <td><select class="new"><option><i class="fa fa-plus-circle"></i>&nbsp; New</option>
+                                    <option>New Ticket</option>
+                                    </select></td>
                                     <td><input type="text" placeholder="Search" id="search"></td>    
                                     <td><i class="fa fa-bell-o fa-2x"></i></td>
                                     <td><i class="fa fa-gift fa-2x"></i></td>
